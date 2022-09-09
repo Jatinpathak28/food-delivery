@@ -54,12 +54,13 @@ window.addEventListener('scroll', scrollHeader)
 
 // ======show scrolltop =========
 function scrollTop(){
-    const scrolltop = document.getElementById('scroll-top')
+    const scrolltop = document.getElementById('top')
 
-    if(this.scrolly >=560) scrollTop.classList.add('scroll-top'); else scrollTop.classList.remove('scroll-top')
+    if(this.scrolly >=560) scrollTop.classList.add('scroll-top'); 
+    else scrollTop.classList.remove('scroll-top')
 }
 
-window.addEventListener('scroll', scroll-top)
+window.addEventListener('scroll', top)
 
 
 // // =========== Dark light theme ============
