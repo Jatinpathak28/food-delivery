@@ -63,29 +63,17 @@ function scrollTop(){
 window.addEventListener('scroll', top)
 
 
-// // =========== Dark light theme ============
+ // =========== Dark light theme ============
+var current_theme = "bright";
 
-// const themeButton = document.getElementById('theme-button')
-// const darkTheme = 'dark-theme'
-// const iconTheme = 'bx-sun'
+function changeColor() {
+  let root = document.documentElement;
 
-// //previsouly selected topic
-// const selectedTheme = localStorage.getItem('selected-theme')
-// const selectedIcon = localStorage.getItem('selected-icon')
-
-// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark':'light' 
-// const getCurrentTheme = () => document.body.classList.contains(iconTheme) ? 'bx-moon':'bx-sun' 
-
-// if(selectedTheme){
-//     document.body.classList[selectedTheme === 'dark' ?'add' :  'remove'](darkTheme)
-//     document.body.classList[selectedTheme === 'bx-moon' ?'add' :  'remove'](iconTheme)
-// }
-
-// // activate / deactivate the theme manually 
-// themeButton.addEventListener('click',()=>{
-//     document.body.classList.toggle(darkTheme)
-//     themeButton.classList.toggle(iconTheme)
-
-//     localStorage.setItem('selected-theme', getCurrentTheme())
-//     localStorage.setItem('selected-icon', getCurrentIcon())
-// })
+  if (current_theme == "bright") {
+    root.style.setProperty("--body-color", "White");
+    current_theme = "dark";
+  } else {
+    root.style.setProperty("--body-color", "Black");
+    current_theme = "bright";
+  }
+}
