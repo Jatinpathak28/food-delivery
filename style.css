@@ -333,23 +333,29 @@ img{
 }
 
 /* ====== Services ====== */
- .services__container{
-     row-gap: 1rem;
-     grid-template-columns: repeat(auto-fit, minma(220px, 1fr));
+  .services__contents{
+    grid-template-columns: repeat(1, 3fr);
+    justify-content: center;
  }
-
  .services__content{
-     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius:.5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+    padding: .75rem;
  }
 
  .services__img{
      width: 64px;
      height: 64px;
-     
+     align-items: center;
      border-radius: 10% 50px;
      fill: var(--first-color);
      margin-bottom: var(--mb-2);
  }
+
 
  .services__title{
      font-size: var(--h3-font-size);
