@@ -373,7 +373,7 @@ img{
     background-color: var(--first-color);
 }
  .menu__container{
-     grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: repeat(2, 0fr);
      justify-content: center;
  }
 
